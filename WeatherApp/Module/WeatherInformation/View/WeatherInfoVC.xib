@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherInfoVC" customModule="weatherAppMVP" customModuleProvider="target">
+            <connections>
+                <outlet property="DateLable" destination="hMd-8u-0x8" id="y66-17-23v"/>
+                <outlet property="hlTemp" destination="U1t-EX-kxb" id="50v-6m-VAB"/>
+                <outlet property="tempLable" destination="PdA-6f-qTH" id="qbc-UT-dwE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weatherDescriptionLable" destination="Zrx-g7-1Qm" id="ZVq-52-VZP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="pCl-HO-rOx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montreal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMd-8u-0x8">
+                    <rect key="frame" x="130.5" y="104" width="153.5" height="35.5"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="35"/>
+                    <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdA-6f-qTH">
+                    <rect key="frame" x="155.5" y="154.5" width="103" height="65"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="65"/>
+                    <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrx-g7-1Qm">
+                    <rect key="frame" x="152.5" y="234.5" width="109.5" height="26"/>
+                    <string key="text">Mostly Clear
+</string>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                    <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H:24°   L:18°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1t-EX-kxb">
+                    <rect key="frame" x="150.5" y="265.5" width="113.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PdA-6f-qTH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3e7-Si-V3E"/>
+                <constraint firstItem="Zrx-g7-1Qm" firstAttribute="top" secondItem="PdA-6f-qTH" secondAttribute="bottom" constant="15" id="4Ow-Cy-T5X"/>
+                <constraint firstItem="PdA-6f-qTH" firstAttribute="top" secondItem="hMd-8u-0x8" secondAttribute="bottom" constant="15" id="FFj-Z9-yKD"/>
+                <constraint firstItem="hMd-8u-0x8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="QFS-I0-gk4"/>
+                <constraint firstItem="hMd-8u-0x8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SOx-sv-296"/>
+                <constraint firstItem="pCl-HO-rOx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="l0V-Yt-BWt"/>
+                <constraint firstItem="Zrx-g7-1Qm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lep-U3-6Xe"/>
+                <constraint firstItem="pCl-HO-rOx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ouE-ni-1IP"/>
+                <constraint firstItem="U1t-EX-kxb" firstAttribute="top" secondItem="Zrx-g7-1Qm" secondAttribute="bottom" constant="5" id="uIx-wF-vk0"/>
+                <constraint firstItem="U1t-EX-kxb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="udS-nx-0BE"/>
+                <constraint firstItem="pCl-HO-rOx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vsT-uo-pO6"/>
+                <constraint firstAttribute="bottom" secondItem="pCl-HO-rOx" secondAttribute="bottom" id="y74-ln-Sqh"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="71.651785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackgroundImage" width="256" height="554"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
