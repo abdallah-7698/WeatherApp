@@ -6,7 +6,7 @@
     Disgn with Clean Code
     Custom network Layer
     
-## How to use
+## How to use App 
     1- Open terminal 
     2- git clone https://github.com/abdallah-7698/WeatherApp.git
     3- pod install
